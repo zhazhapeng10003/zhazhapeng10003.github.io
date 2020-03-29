@@ -40,7 +40,7 @@
             <div class="brand-logo">
                 <a href="../index.html" class="waves-effect waves-light">
                     
-                    <img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">渣渣鹏</span>
                 </a>
@@ -205,7 +205,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">渣渣鹏</div>
         <div class="logo-desc">
@@ -445,7 +445,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('//q7u2muj8t.bkt.clouddn.com/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://q7u2muj8t.bkt.clouddn.com/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -627,16 +627,16 @@
                 <h2 id="二维数组中的查找"><a href="#二维数组中的查找" class="headerlink" title="二维数组中的查找:"></a>二维数组中的查找:</h2><h4 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h4><p><a href="https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=13&amp;tqId=11154&amp;tPage=1&amp;rp=1&amp;ru=/ta/coding-interviews&amp;qru=/ta/coding-interviews/question-ranking" target="_blank" rel="noopener">牛客网</a><br></p>
 <h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>    在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。<br></p>
 <blockquote>
-<p>Consider the following matrix:<br><br>[<br><br>  [1,   4,  7, 11, 15],<br><br>  [2,   5,  8, 12, 19],<br><br>  [3,   6,  9, 16, 22],<br><br>  [10, 13, 14, 17, 24],<br><br>  [18, 21, 23, 26, 30]<br><br>]</p>
+<p>Consider the following matrix:<br>[<br>  [1,   4,  7, 11, 15],<br>  [2,   5,  8, 12, 19],<br>  [3,   6,  9, 16, 22],<br>  [10, 13, 14, 17, 24],<br>  [18, 21, 23, 26, 30]<br>]</p>
 </blockquote>
-<p>Given target = <code>5</code>, return <code>true</code>。<br><br>Given target = <code>20</code>, return <code>false</code>。<br></p>
+<p>Given target = <code>5</code>, return <code>true</code>。<br>Given target = <code>20</code>, return <code>false</code>。<br></p>
 <h4 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：<br></h4><p>利用该二维数组的性质：</p>
-<p><strong><font size="3">•</font></strong><font size="3"> 每一行都按照从左到右递增的顺序排序;<br><br><strong><font size="3">•</font></strong><font size="3"> 每一列都按照从上到下递增的顺序排序;<br><br>    该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。<br><br><strong><font size="3">•</font></strong><font size="3"> 当 m &lt; target，由于 m 已经是该行最大的元素，想要更大只有从列考虑，取值右移一位;<br><br><strong><font size="3">•</font></strong><font size="3"> 当 m &gt; target，由于 m 已经是该列最小的元素，想要更小只有从行考虑，取值上移一位;<br><br><strong><font size="3">•</font></strong><font size="3"> 当 m = target，找到该值，返回 true<br>用某行最小或某列最大与 target 比较，每次可剔除一整行或一整列。<br></font></font></font></font></font></p><font size="3"><font size="3"><font size="3">
+<p><strong><font size="3">•</font></strong><font size="3"> 每一行都按照从左到右递增的顺序排序，<br><strong><font size="3">•</font></strong><font size="3"> 每一列都按照从上到下递增的顺序排序<br>    该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。<br><br><strong><font size="3">•</font></strong><font size="3"> 当 m &lt; target，由于 m 已经是该行最大的元素，想要更大只有从列考虑，取值右移一位<br><strong><font size="3">•</font></strong><font size="3"> 当 m &gt; target，由于 m 已经是该列最小的元素，想要更小只有从行考虑，取值上移一位<br><strong><font size="3">•</font></strong><font size="3"> 当 m = target，找到该值，返回 true<br>用某行最小或某列最大与 target 比较，每次可剔除一整行或一整列。<br></font></font></font></font></font></p><font size="3"><font size="3"><font size="3">
 <center>
-<img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="https://img-blog.csdnimg.cn/20200322183416116.gif" width="50%"> <br>
+<img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="https://img-blog.csdnimg.cn/20200322183416116.gif" width="50%"> <br>
 </center>
 
-<h4 id="复杂度："><a href="#复杂度：" class="headerlink" title="复杂度："></a>复杂度：<br></h4><p>时间复杂度：<strong><em>O</em>(行高+列宽)</strong><br><br>空间复杂度：<strong><em>O</em>(1)</strong></p>
+<h4 id="复杂度："><a href="#复杂度：" class="headerlink" title="复杂度："></a>复杂度：<br></h4><p>时间复杂度：<strong><em>O</em>(行高+列宽)</strong><br>空间复杂度：<strong><em>O</em>(1)</strong></p>
 <h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：<br></h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">Find</span><span class="token punctuation">(</span><span class="token keyword">int</span> target<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">int</span> i <span class="token operator">=</span> array<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
@@ -654,7 +654,7 @@
         <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<p><font size="5," color="yellow"><strong>Peace!</strong></font></p><font size="5," color="yellow">
+<p><font size="5"><strong>Peace!</strong></font></p><font size="5">
 </font></font></font></font><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -821,10 +821,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -891,7 +891,7 @@
                 <a href="">
                     <div class="card-image">
                         
-                        <img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="//q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（一）：二维数组中的查找">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（一）：二维数组中的查找">
                         
                         <span class="card-title">剑指Offer（一）：二维数组中的查找</span>
                     </div>
@@ -940,7 +940,7 @@
                 <a href="35137.html">
                     <div class="card-image">
                         
-                        <img src="//q7u2muj8t.bkt.clouddn.com/post_loading.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/12.jpg" class="responsive-img" alt="剑指Offer汇总">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/12.jpg" class="responsive-img" alt="剑指Offer汇总">
                         
                         <span class="card-title">剑指Offer汇总</span>
                     </div>
