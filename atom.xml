@@ -44,6 +44,303 @@
   </entry>
   
   <entry>
+    <title>剑指Offer（三十七）：数字在排序数组中出现的次数</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:36:00.856Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数字在排序数组中出现的次数&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（三十二）：把数组排成最小的数</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:34:23.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;把数组排成最小的数&quot;&gt;&lt;a href=&quot;#把数组排成最小的数&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（三十）：连续子数组的最大和（dp）</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:33:43.056Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;连续子数组的最大和&quot;&gt;&lt;a href=&quot;#连续子数组的最大和&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（二十八）：数组中出现次数超过一半的数字</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:33:00.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数组中出现次数超过一半的数字&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（五十一）：构建乘积数组</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:39:07.075Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;构建乘积数组&quot;&gt;&lt;a href=&quot;#构建乘积数组&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（五十）：数组中重复的数字</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:38:15.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数组中重复的数字&quot;&gt;&lt;a href=&quot;#数组中重复的数字&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（六十四）：滑动窗口的最大值</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:40:02.096Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;滑动窗口的最大值&quot;&gt;&lt;a href=&quot;#滑动窗口的最大值&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（六）：旋转数组的最小数字</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:29:56.717Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;旋转数组的最小数字&quot;&gt;&lt;a href=&quot;#旋转数组的最小数字&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（十三）：调整数组顺序使奇数位于偶数前面</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:30:58.671Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;调整数组顺序使奇数位于偶数前面&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（十九）：顺时针打印矩阵</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:32:15.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;顺时针打印矩阵&quot;&gt;&lt;a href=&quot;#顺时针打印矩阵&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（四十）：数组中只出现一次的数字</title>
+    <link href="https://zhazhapeng.cn/post/43262.html"/>
+    <id>https://zhazhapeng.cn/post/43262.html</id>
+    <published>2020-03-29T15:36:45.000Z</published>
+    <updated>2020-03-29T16:37:32.035Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数组中只出现一次的数字&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
+  
+  <entry>
     <title>剑指Offer汇总</title>
     <link href="https://zhazhapeng.cn/post/35137.html"/>
     <id>https://zhazhapeng.cn/post/35137.html</id>
