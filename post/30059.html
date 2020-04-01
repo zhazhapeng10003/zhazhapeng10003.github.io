@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Medias, 渣渣鹏">
+    <meta name="keywords" content="剑指Offer（五十一）：构建乘积数组, 渣渣鹏">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Medias | 渣渣鹏</title>
+    <title>剑指Offer（五十一）：构建乘积数组 | 渣渣鹏</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -445,12 +445,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://q7u2muj8t.bkt.clouddn.com/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Medias</h1>
+                    <h1 class="description center-align post-title">剑指Offer（五十一）：构建乘积数组</h1>
                 </div>
             </div>
         </div>
@@ -565,12 +565,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="../tags/%E5%89%91%E6%8C%87Offer/">
+                                <span class="chip bg-color">剑指Offer</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="../categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -579,28 +592,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-26
+                    2020-04-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-26
+                    2020-04-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    432
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -611,7 +624,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="构建乘积数组"><a href="#构建乘积数组" class="headerlink" title="构建乘积数组:"></a>构建乘积数组:</h2><h4 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h4><p><a href="//www.nowcoder.com/practice/94a4d381a68b47b7a8bed86f2975db46?tpId=13&amp;tqId=11204&amp;tPage=1&amp;rp=1&amp;ru=/ta/coding-interviews&amp;qru=/ta/coding-interviews/question-ranking" target="_blank" rel="noopener">牛客网</a><br></p>
+<h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>    给定一个数组 A[0,1,…,n-1],请构建一个数组 B[0,1,…,n-1],其中B中的元素 B[i] = A[0] × A[1] × … × A[i-1] × A[i+1] × … × A[n-1]。不能使用除法。（注意：规定B[0] = A[0] × A[1] × … × A[n-2];）<br><br><strong><font size="3">示例 1：</font></strong></p><font size="3">
+<blockquote>
+<p><strong>输入:</strong> [1,2,3,4,5]<br><strong>输出:</strong> [120,60,40,30,24]</p>
+</blockquote>
+<p><strong><font size="3">示例 2：</font></strong></p><font size="3">
+<blockquote>
+<p><strong>输入:</strong> [2,2,2,0,1]<br><strong>输出:</strong> 1</p>
+</blockquote>
+<h4 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：<br></h4><p>因为题目要求不能使用除法，所以我们不能使用公式 B[i] = A[0] × A[1] × … × A[i-1] × A[i+1] × … × A[n-1] 表示,使用除法时要特别注意 A[i] 等于 <strong>0</strong> 的情况。</p>
+<p><img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWcyMDE4LmNuYmxvZ3MuY29tL2Jsb2cvMTQwNzMzMC8yMDE4MTEvMTQwNzMzMC0yMDE4MTExNjIxNDYzNTc0OC0xOTY4NzQwODU1LnBuZw?x-oss-process=image/format,png#pic_center" alt="">                                         （图片转自<a href="https://www.cnblogs.com/wxdjss/p/5448990.html" target="_blank" rel="noopener">此处</a>）<br><strong><font size="3">•</font></strong><font size="3"> 从图中可以发现，B[i] 的左半部分与 B[i-1] 有关（<strong>B[i] = B[i-1] * A[i-1]</strong>）;<br><strong><font size="3">•</font></strong><font size="3"> 把 B[i] 的右半部分看作D[i]，有D[i] = D[i+1] * A[i+1]；<br><br><strong><font size="3">•</font></strong><font size="3"> 因此我们先从0到n-1遍历，计算每个B[i]的左半部分；然后定义一个变量 temp 代表右半部分的乘积，从 n-1 到 0 遍历，令 B[i]* = temp，而每次的 temp 与上次的 temp 关系即为temp* = A[i+1]。</font></font></font></p><font size="3"><font size="3"><font size="3">
+<h4 id="复杂度："><a href="#复杂度：" class="headerlink" title="复杂度："></a>复杂度：<br></h4><p>时间复杂度：<strong><em>O</em>(N)</strong></p>
+<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：<br></h4><pre class=" language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>ArrayList<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">multiply</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> A<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>A <span class="token operator">==</span> null <span class="token operator">||</span> A<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> B <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>A<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        B<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> A<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            B<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> B<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> A<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> temp <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> A<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            temp <span class="token operator">*=</span> A<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            B<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*=</span> temp<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> B<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p><font size="5"><strong>Peace!</strong></font></p><font size="5">
+</font></font></font></font></font></font><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -641,7 +687,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="../tags/%E5%89%91%E6%8C%87Offer/">
+                                    <span class="chip bg-color">剑指Offer</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -813,7 +863,7 @@
         repo: 'zhazhapeng10003.github.io',
         owner: 'zhazhapeng10003',
         admin: "zhazhapeng10003",
-        id: '2020-03-26T14-14-27',
+        id: '2020-04-02T00-50-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -835,42 +885,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="">
+                <a href="64066.html">
                     <div class="card-image">
                         
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（六十四）：滑动窗口的最大值">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="Medias">
-                        
-                        <span class="card-title">Medias</span>
+                        <span class="card-title">剑指Offer（六十四）：滑动窗口的最大值</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                             
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-26
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            渣渣鹏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../tags/%E5%89%91%E6%8C%87Offer/">
+                        <span class="chip bg-color">剑指Offer</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -878,40 +934,47 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="">
+                <a href="64951.html">
                     <div class="card-image">
                         
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（五十）：数组中重复的数字">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="Medias">
-                        
-                        <span class="card-title">Medias</span>
+                        <span class="card-title">剑指Offer（五十）：数组中重复的数字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                             
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            渣渣鹏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../tags/%E5%89%91%E6%8C%87Offer/">
+                        <span class="chip bg-color">剑指Offer</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
