@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="剑指Offer（六十四）：滑动窗口的最大值, 渣渣鹏">
+    <meta name="keywords" content="Java基础必知必会, 渣渣鹏">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>剑指Offer（六十四）：滑动窗口的最大值 | 渣渣鹏</title>
+    <title>Java基础必知必会 | 渣渣鹏</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -445,12 +445,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://q7u2muj8t.bkt.clouddn.com/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://q7u2muj8t.bkt.clouddn.com/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">剑指Offer（六十四）：滑动窗口的最大值</h1>
+                    <h1 class="description center-align post-title">Java基础必知必会</h1>
                 </div>
             </div>
         </div>
@@ -567,8 +567,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="../tags/%E5%89%91%E6%8C%87Offer/">
-                                <span class="chip bg-color">剑指Offer</span>
+                            <a href="../tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -579,8 +579,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="../categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
+                            <a href="../categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-category">
+                                基础知识
                             </a>
                         
                     </div>
@@ -606,7 +606,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    572
+                    646
                 </div>
                 
 
@@ -624,46 +624,61 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="滑动窗口的最大值"><a href="#滑动窗口的最大值" class="headerlink" title="滑动窗口的最大值:"></a>滑动窗口的最大值:</h2><h4 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h4><p><a href="//www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=13&amp;tqId=11217&amp;tPage=4&amp;rp=1&amp;ru=/ta/coding-interviews&amp;qru=/ta/coding-interviews/question-ranking" target="_blank" rel="noopener">牛客网</a><br></p>
-<h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>    给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组{2,3,4,2,6,2,5,1}及滑动窗口的大小3，那么一共存在6个滑动窗口，他们的最大值分别为{4,4,6,6,6,5}； 针对数组{2,3,4,2,6,2,5,1}的滑动窗口有以下6个： {[2,3,4],2,6,2,5,1}，<br> {2,[3,4,2],6,2,5,1}， {2,3,[4,2,6],2,5,1}， {2,3,4,[2,6,2],5,1}， {2,3,4,2,[6,2,5],1}， {2,3,4,2,6,[2,5,1]}。<br><br><strong><font size="3">示例 1：</font></strong></p><font size="3">
-<blockquote>
-<p><strong>输入:</strong> nums = [1,3,-1,-3,5,3,6,7], 和 k = 3<br><strong>输出:</strong> [3,3,5,5,6,7]<br> 滑动窗口的位置                              最大值<br>———————————–              —–<br>[1   3   -1]  -3   5   3   6   7         3<br> 1  [3  -1   -3]  5   3   6  7       3<br> 1   3  [-1   -3   5]  3   6   7       5<br> 1   3   -1  [-3   5   3]  6  7      5<br> 1   3   -1   -3  [5   3   6]  7       6<br> 1   3   -1   -3   5  [3   6   7]       7</p>
-</blockquote>
-<h4 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：<br></h4><p>    利用双端队列：<br><strong><font size="3">•</font></strong><font size="3"> 每次 push 时，从队尾把值加进来。加进来的同时判断从右到左判断，比他小与等于的值全部弹出；<br><strong><font size="3">•</font></strong><font size="3"> 队头每次向右移动 ，判断队头的坐标是否过期。（越界）越界的话就弹出。</font></font></p><font size="3"><font size="3">
-<h4 id="复杂度："><a href="#复杂度：" class="headerlink" title="复杂度："></a>复杂度：<br></h4><p>时间复杂度：<strong><em>O</em>(N)</strong>，每个元素被处理两次- 其索引被添加到双向队列中和被双向队列删除<br>空间复杂度：<strong><em>O</em>(N)</strong>，双向队列的空间</p>
-<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：<br></h4><pre class=" language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>ArrayList<span class="token punctuation">;</span>
-<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Deque<span class="token punctuation">;</span>
-<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>LinkedList<span class="token punctuation">;</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">JianZhiOffer64</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> <span class="token function">maxInWindows</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> num<span class="token punctuation">,</span> <span class="token keyword">int</span> size<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">==</span> null <span class="token operator">||</span> num<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> size <span class="token operator">></span> num<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span> null<span class="token punctuation">;</span>
-        ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        Deque<span class="token operator">&lt;</span>Integer<span class="token operator">></span> deque <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <p><strong><font size="5">基础知识笔记记录，持续更新ing~</font></strong><font size="5">  <font size="3"><br><br>个人博客：<a href="https://www.zhazhapeng.cn" target="_blank" rel="noopener">www.zhazhapeng.cn</a><br></font></font></p><font size="5"><font size="3">
+<h5 id="1、JDK-JRE的区别"><a href="#1、JDK-JRE的区别" class="headerlink" title="1、JDK\JRE的区别"></a>1、JDK\JRE的区别</h5><p>    <strong><font size="3">•</font></strong><font size="3"> JDK（Java Development Kit）<br>        开发工具<br>        基本类库<br>        javac（编译）<br>        javap（反编译）<br>        javadoc（编译文档）<br>    <strong><font size="3">•</font></strong><font size="3"> 运行环境（单单运行一个Java程序）<br>        JRE（Java Runtime Environment）</font></font></p><font size="3"><font size="3">
+<h5 id="2、-与-equals-的区别"><a href="#2、-与-equals-的区别" class="headerlink" title="2、== 与 equals 的区别"></a>2、== 与 equals 的区别</h5><p>    <strong><font size="3">•</font></strong><font size="3"> ==：<font color="black"><br>        基本类型：8种（int\short\long\double\float\byte\boolean\char）；<br>        引用类型：看引用的对象是否是同一个！<br>    <strong><font size="3">•</font></strong><font size="3"> equals：<font color="black"><br>        ①重写Object，自己定义比较规则，常见的对象如String等都已经重写了比较的代码；<br>        ②不写，就是比较引用地址是否相同，==</font></font></font></font></p><font size="3"><font color="black"><font size="3"><font color="black">
+<h5 id="3、HashCode与Equals相同吗"><a href="#3、HashCode与Equals相同吗" class="headerlink" title="3、HashCode与Equals相同吗"></a>3、HashCode与Equals相同吗</h5><p>        <a href="https://www.cnblogs.com/keyi/p/7119825.html" target="_blank" rel="noopener">详解</a></p>
+<h5 id="4、Final有什么用"><a href="#4、Final有什么用" class="headerlink" title="4、Final有什么用"></a>4、Final有什么用</h5><p>    <strong><font size="3">•</font></strong><font size="3"> Final <font color="black"><br>        类：不能被继承<br>        方法：不能被重写<br>        变量：<br>            基本类型：值<br>            引用类型：引用的对象内部的值可以变</font></font></p><font size="3"><font color="black">
+<p>    类：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">Father</span><span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
 
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> num<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token comment" spellcheck="true">//如果队头元素不在滑动窗口中，就删除头元素；</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>deque<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">>=</span> deque<span class="token punctuation">.</span><span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                deque<span class="token punctuation">.</span><span class="token function">pollLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-            <span class="token comment" spellcheck="true">//如果当前元素大于队尾则删除</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>deque<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> num<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> num<span class="token punctuation">[</span>deque<span class="token punctuation">.</span><span class="token function">getLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                deque<span class="token punctuation">.</span><span class="token function">pollLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-            deque<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">>=</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                result<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>deque<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Son</span> <span class="token keyword">extends</span> <span class="token class-name">Father</span><span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//Cannot inherit from final '*.Father'</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><font size="5"><strong>Peace!</strong></font></p><font size="5">
-</font></font></font></font><script>
+<p>    方法：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Father</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">dosomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Son</span> <span class="token keyword">extends</span> <span class="token class-name">Father</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Son<span class="token punctuation">.</span>dosomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">dosomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//Error:overridden method id final</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>    变量：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Father</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">dosomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Son</span> <span class="token keyword">extends</span> <span class="token class-name">Father</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setA</span><span class="token punctuation">(</span><span class="token keyword">int</span> number<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        a <span class="token operator">=</span> number<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//Error:Cannot assign a value to final variable 'a'</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Son<span class="token punctuation">.</span>dosomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h5 id="5、操作字符串有哪些类？它们之间有什么区别"><a href="#5、操作字符串有哪些类？它们之间有什么区别" class="headerlink" title="5、操作字符串有哪些类？它们之间有什么区别"></a>5、操作字符串有哪些类？它们之间有什么区别</h5><p>    String：不可变<br>    StringBuilder：可变，不加锁，速度快<br>    StringBuffer：可变，加锁，线程安全<br></p>
+<h5 id="6、Java种的-Math-round-1-5-等于多少"><a href="#6、Java种的-Math-round-1-5-等于多少" class="headerlink" title="6、Java种的 Math.round(-1.5) 等于多少"></a>6、Java种的 Math.round(-1.5) 等于多少</h5><p>    Math.round(-1.5) = -1</p>
+<blockquote>
+<p>-3, -2, -1, 0, 1, 2<br><strong>Math.round()：向右取整</strong></p>
+</blockquote>
+<h5 id="7、HashMap-与-HashTable-的区别"><a href="#7、HashMap-与-HashTable-的区别" class="headerlink" title="7、HashMap 与 HashTable 的区别"></a>7、HashMap 与 HashTable 的区别</h5><p>    <strong><font size="3">•</font></strong><font size="3"> Map：<br>        HashMap：线程不安全，速度快，允许放入空值（ HashMap.put(null, null) √ ）；<br>        HashTable：线程安全，速度慢，不允许放入空值<br>（多线程的同时执行方法，谁先拿到锁才可以执行，剩下没拿到锁的就等待拿到锁）。<br>    &lt;key, value&gt;<br></font></p><font size="3">
+<h5 id="8、HashMap"><a href="#8、HashMap" class="headerlink" title="8、HashMap"></a>8、HashMap</h5><p>    <a href="https://blog.csdn.net/woshimaxiao1/article/details/83661464" target="_blank" rel="noopener">具体详解</a><br></p>
+<p>    HashMap：<br>        存储结构：entry的数组，entry&lt;key, value&gt;，entry本身也是一种链表结构，长度&gt;=8，变成红黑树；<br>        存储逻辑：根据计算hash值放到对应位置；<br>        扩容方案：自身容量扩大一倍，成倍增长！<br></p>
+<h5 id="9、Vector-和-ArrayList-的区别"><a href="#9、Vector-和-ArrayList-的区别" class="headerlink" title="9、Vector 和 ArrayList 的区别"></a>9、Vector 和 ArrayList 的区别</h5><p>    <strong><font size="3">•</font></strong><font size="3"> List：<br>        Vector：上锁，线程安全，速度较慢，增长2×<br>        ArrayList：线程不安全，速度较快，增长是1.5×<br><br>    <strong><font size="3">•</font></strong><font size="3"> Vector为什么用的少：<br>        ①线程安全，牺牲了速度；<br>        ②扩容大，需要连续储存空间比较大;<br>        ③插入、删除比较慢，LinkedList来实现</font></font></p><font size="3"><font size="3">
+<p><strong><font size="5">Peace!</font></strong></p><font size="5">
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -694,8 +709,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="../tags/%E5%89%91%E6%8C%87Offer/">
-                                    <span class="chip bg-color">剑指Offer</span>
+                                <a href="../tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -869,7 +884,7 @@
         repo: 'zhazhapeng10003.github.io',
         owner: 'zhazhapeng10003',
         admin: "zhazhapeng10003",
-        id: '2020-04-02T01-03-18',
+        id: '2020-04-02T16-18-36',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -891,11 +906,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="63796.html">
+                <a href="">
                     <div class="card-image">
                         
                         <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/6.jpg" class="responsive-img" alt="Java基础必知必会">
@@ -910,9 +926,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -925,6 +941,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -943,12 +960,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="30059.html">
+                <a href="64066.html">
                     <div class="card-image">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（五十一）：构建乘积数组">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（六十四）：滑动窗口的最大值">
                         
-                        <span class="card-title">剑指Offer（五十一）：构建乘积数组</span>
+                        <span class="card-title">剑指Offer（六十四）：滑动窗口的最大值</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
