@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhazhapeng.cn/"/>
-  <updated>2020-04-02T08:35:42.361Z</updated>
+  <updated>2020-04-09T07:41:00.815Z</updated>
   <id>https://zhazhapeng.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Maven--pom.xml详解</title>
+    <link href="https://zhazhapeng.cn/post/41105.html"/>
+    <id>https://zhazhapeng.cn/post/41105.html</id>
+    <published>2020-04-09T07:35:55.000Z</published>
+    <updated>2020-04-09T07:41:00.815Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-java&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="项目工具" scheme="https://zhazhapeng.cn/categories/%E9%A1%B9%E7%9B%AE%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Maven" scheme="https://zhazhapeng.cn/tags/Maven/"/>
+    
+  </entry>
   
   <entry>
     <title>Java基础必知必会</title>
