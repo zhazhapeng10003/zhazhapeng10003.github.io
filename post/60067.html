@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="剑指Offer（六十四）：滑动窗口的最大值, 渣渣鹏">
+    <meta name="keywords" content="GaitSet, 渣渣鹏">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>剑指Offer（六十四）：滑动窗口的最大值 | 渣渣鹏</title>
+    <title>GaitSet | 渣渣鹏</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -450,7 +450,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">剑指Offer（六十四）：滑动窗口的最大值</h1>
+                    <h1 class="description center-align post-title">GaitSet</h1>
                 </div>
             </div>
         </div>
@@ -565,25 +565,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="../tags/%E5%89%91%E6%8C%87Offer/">
-                                <span class="chip bg-color">剑指Offer</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="../categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -592,28 +579,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-02
+                    2020-05-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-02
+                    2020-05-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    572
+                    52
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -624,46 +611,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="滑动窗口的最大值"><a href="#滑动窗口的最大值" class="headerlink" title="滑动窗口的最大值:"></a>滑动窗口的最大值:</h2><h4 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h4><p><a href="//www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=13&amp;tqId=11217&amp;tPage=4&amp;rp=1&amp;ru=/ta/coding-interviews&amp;qru=/ta/coding-interviews/question-ranking" target="_blank" rel="noopener">牛客网</a><br></p>
-<h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>    给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组{2,3,4,2,6,2,5,1}及滑动窗口的大小3，那么一共存在6个滑动窗口，他们的最大值分别为{4,4,6,6,6,5}； 针对数组{2,3,4,2,6,2,5,1}的滑动窗口有以下6个： {[2,3,4],2,6,2,5,1}，<br> {2,[3,4,2],6,2,5,1}， {2,3,[4,2,6],2,5,1}， {2,3,4,[2,6,2],5,1}， {2,3,4,2,[6,2,5],1}， {2,3,4,2,6,[2,5,1]}。<br><br><strong><font size="3">示例 1：</font></strong></p><font size="3">
-<blockquote>
-<p><strong>输入:</strong> nums = [1,3,-1,-3,5,3,6,7], 和 k = 3<br><strong>输出:</strong> [3,3,5,5,6,7]<br> 滑动窗口的位置                              最大值<br>———————————–              —–<br>[1   3   -1]  -3   5   3   6   7         3<br> 1  [3  -1   -3]  5   3   6  7       3<br> 1   3  [-1   -3   5]  3   6   7       5<br> 1   3   -1  [-3   5   3]  6  7      5<br> 1   3   -1   -3  [5   3   6]  7       6<br> 1   3   -1   -3   5  [3   6   7]       7</p>
-</blockquote>
-<h4 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：<br></h4><p>    利用双端队列：<br><strong><font size="3">•</font></strong><font size="3"> 每次 push 时，从队尾把值加进来。加进来的同时判断从右到左判断，比他小与等于的值全部弹出；<br><strong><font size="3">•</font></strong><font size="3"> 队头每次向右移动 ，判断队头的坐标是否过期。（越界）越界的话就弹出。</font></font></p><font size="3"><font size="3">
-<h4 id="复杂度："><a href="#复杂度：" class="headerlink" title="复杂度："></a>复杂度：<br></h4><p>时间复杂度：<strong><em>O</em>(N)</strong>，每个元素被处理两次- 其索引被添加到双向队列中和被双向队列删除<br>空间复杂度：<strong><em>O</em>(N)</strong>，双向队列的空间</p>
-<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：<br></h4><pre class=" language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>ArrayList<span class="token punctuation">;</span>
-<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Deque<span class="token punctuation">;</span>
-<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>LinkedList<span class="token punctuation">;</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">JianZhiOffer64</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> <span class="token function">maxInWindows</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> num<span class="token punctuation">,</span> <span class="token keyword">int</span> size<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">==</span> null <span class="token operator">||</span> num<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> size <span class="token operator">></span> num<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span> null<span class="token punctuation">;</span>
-        ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        Deque<span class="token operator">&lt;</span>Integer<span class="token operator">></span> deque <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> num<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token comment" spellcheck="true">//如果队头元素不在滑动窗口中，就删除头元素；</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>deque<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">>=</span> deque<span class="token punctuation">.</span><span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                deque<span class="token punctuation">.</span><span class="token function">pollLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-            <span class="token comment" spellcheck="true">//如果当前元素大于队尾则删除</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>deque<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> num<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> num<span class="token punctuation">[</span>deque<span class="token punctuation">.</span><span class="token function">getLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                deque<span class="token punctuation">.</span><span class="token function">pollLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-            deque<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">>=</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                result<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>deque<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p><font size="5"><strong>Peace!</strong></font></p><font size="5">
-</font></font></font></font><script>
+                <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -693,11 +641,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="../tags/%E5%89%91%E6%8C%87Offer/">
-                                    <span class="chip bg-color">剑指Offer</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -869,7 +813,7 @@
         repo: 'zhazhapeng10003.github.io',
         owner: 'zhazhapeng10003',
         admin: "zhazhapeng10003",
-        id: '2020-04-02T01-03-18',
+        id: '2020-05-10T13-21-45',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -895,12 +839,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="63796.html">
+                <a href="14081.html">
                     <div class="card-image">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/6.jpg" class="responsive-img" alt="Java基础必知必会">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="数据结构与算法思想">
                         
-                        <span class="card-title">Java基础必知必会</span>
+                        <span class="card-title">数据结构与算法思想</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -911,14 +855,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="../categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-category">
-                                    基础知识
+                            <a href="../categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    学习笔记
                                 </a>
                             
                             
@@ -928,8 +872,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="../tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="../tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
                     </a>
                     
                 </div>
@@ -943,12 +887,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="30059.html">
+                <a href="41105.html">
                     <div class="card-image">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="剑指Offer（五十一）：构建乘积数组">
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/10.jpg" class="responsive-img" alt="Maven--pom.xml详解">
                         
-                        <span class="card-title">剑指Offer（五十一）：构建乘积数组</span>
+                        <span class="card-title">Maven--pom.xml详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -959,14 +903,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="../categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="../categories/%E9%A1%B9%E7%9B%AE%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    项目工具
                                 </a>
                             
                             
@@ -976,8 +920,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="../tags/%E5%89%91%E6%8C%87Offer/">
-                        <span class="chip bg-color">剑指Offer</span>
+                    <a href="../tags/Maven/">
+                        <span class="chip bg-color">Maven</span>
                     </a>
                     
                 </div>
