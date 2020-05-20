@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Medias, 渣渣鹏">
+    <meta name="keywords" content="双亲委派机制, 渣渣鹏">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Medias | 渣渣鹏</title>
+    <title>双亲委派机制 | 渣渣鹏</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -445,12 +445,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://q7u2muj8t.bkt.clouddn.com/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Medias</h1>
+                    <h1 class="description center-align post-title">双亲委派机制</h1>
                 </div>
             </div>
         </div>
@@ -565,12 +565,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="../tags/JVM%EF%BC%8C%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">JVM，类加载子系统</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="../categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                编程语言
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -579,28 +592,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-26
+                    2020-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-26
+                    2020-05-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -611,7 +624,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>    Java虚拟机对class文件采用的是按需加载的方式，也就是说当需要使用该类时才会将她的class文件加载到内存生成的class对象。而且加载某个类的class文件时，java虚拟机采用的是双亲委派模式，即把请求交由父类处理，它是一种任务委派模式。</p>
+<h3 id="双亲委派机制的工作原理"><a href="#双亲委派机制的工作原理" class="headerlink" title="双亲委派机制的工作原理"></a>双亲委派机制的工作原理</h3><p>    <strong><font size="3">•</font></strong><font size="3"> （1）如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行；<br><br>    <strong><font size="3">•</font></strong><font size="3"> （2）如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归请求最终将到达顶层的启动类加载器；<br><br>    <strong><font size="3">•</font></strong><font size="3"> （3）如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载，这就是双亲委派模式。<br></font></font></font></p><font size="3"><font size="3"><font size="3">
+<center>
+<img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="https://img-blog.csdnimg.cn/20200520151554395.png" alt="图片替换文本" width="500" height="350" align="bottom">
+</center>
+
+<h3 id="双亲委派机制的优势"><a href="#双亲委派机制的优势" class="headerlink" title="双亲委派机制的优势"></a>双亲委派机制的优势</h3><p>    <strong><font size="3">• 1.避免类的重复加载</font></strong><font size="3"><br><br><br>    <strong><font size="3">• 2.保护程序安全，防止核心API被随意修改</font></strong><font size="3"><br><br>    启动类加载器可以抢在标准扩展类装载器之前去装载类，而标准扩展类装载器可以抢在类路径加载器之前去装载那个类，类路径装载 器又可以抢在自定义类加载器之前去加载它。所以Java虚拟机先从最可信的Java核心API查找类型，这是为了防止不可靠的类扮演被信任的类，试想一 下，网络上有个名叫java.lang.Integer的类，它是某个黑客为了想混进java.lang包所起的名字，实际上里面含有恶意代码，但是这种 伎俩在双亲模式加载体系结构下是行不通的，因为网络类加载器在加载它的时候，它首先调用双亲类加载器，这样一直向上委托，直到启动类加载器，而启动类加载 器在核心Java API里发现了这个名字的类，所以它就直接加载Java核心API的java.lang.Integer类，然后将这个类返回，所以自始自终网络上的 java.lang.Integer的类是不会被加载的。<br><br><br>    <strong><font size="3">•3.保证核心API包的访问权限</font></strong><font size="3"> <br><br>    但是如果这个移动代码不是去试图替换一个被信任的类（就是前面说的那种情况），而是想在一个被信任的包中插入一个全新的类型，情况会怎样呢？比如一个名为 java.lang.Virus的类，经过双亲委托模式，最终类装载器试图从网络上下载这个类，因为网络类装载器的双亲们都没有这个类（当然没有了，因为 是病毒嘛）。假设成功下载了这个类，那你肯定会想，Virus和lang下的其他类痛在java.lang包下，暗示这个类是Java API的一部分，那么是不是也拥有修改Java.lang包中数据的权限呢？答案当然不是，因为要取得访问和修改java.lang包中的权 限，java.lang.Virus和java.lang下其他类必须是属于同一个运行时包的，什么是运行时包？运行时包是指由同一个类装载器装载的、属 于同一个包的、多个类型的集合。考虑一下，java.lang.Virus和java.lang其他类是同一个类装载器装载的吗?不是的！java.lang.Virus是由网络类装载器装载的！</font></font></font></p><font size="3"><font size="3"><font size="3">
+<h3 id="双亲委派机制在SPI中的应用"><a href="#双亲委派机制在SPI中的应用" class="headerlink" title="双亲委派机制在SPI中的应用"></a>双亲委派机制在SPI中的应用</h3><p>    <strong><font size="3">•</font></strong><font size="3"> 1.某个应用程序由双亲委派机制找到引导类加载器，首先调用rt.jar包中的SPI核心，但由于SPI核心当中有各种各样的接口需要被实现（这里指具体的服务提供商），这里我们已JDBC.jar为例，jdbc.jar可以为我们提供具体的实现。<br><br><br>    <strong><font size="3">•</font></strong><font size="3"> 2.那么这时我们需要反向委托，找到线程上下文类加载器去加载jdbc.jar<br><br><br>    <strong><font size="3">•</font></strong><font size="3"> 3.线程上下文类加载器属于系统类加载器<br></font></font></font></p><font size="3"><font size="3"><font size="3">
+<center>
+<img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="https://img-blog.csdnimg.cn/20200520152358511.png" alt="图片替换文本" width="500" height="350" align="bottom">
+</center>
+
+<p><strong><font size="5">Peace!</font></strong></p><font size="5">
+</font></font></font></font></font></font></font></font></font></font><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -641,7 +667,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="../tags/JVM%EF%BC%8C%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">JVM，类加载子系统</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -813,7 +843,7 @@
         repo: 'zhazhapeng10003.github.io',
         owner: 'zhazhapeng10003',
         admin: "zhazhapeng10003",
-        id: '2020-03-26T14-14-27',
+        id: '2020-05-20T15-26-31',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -843,34 +873,42 @@
                 <a href="">
                     <div class="card-image">
                         
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="双亲委派机制">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="Medias">
-                        
-                        <span class="card-title">Medias</span>
+                        <span class="card-title">双亲委派机制</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                             
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            渣渣鹏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../tags/JVM%EF%BC%8C%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">JVM，类加载子系统</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -878,40 +916,47 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="">
+                <a href="48440.html">
                     <div class="card-image">
                         
+                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="http://q7u2muj8t.bkt.clouddn.com/4.jpg" class="responsive-img" alt="对象分配过程TLAB">
                         
-                        <img src="http://q7u2muj8t.bkt.clouddn.com/loading3.gif" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="Medias">
-                        
-                        <span class="card-title">Medias</span>
+                        <span class="card-title">对象分配过程TLAB</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                             
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            渣渣鹏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../tags/JVM%EF%BC%8CTLAB/">
+                        <span class="chip bg-color">JVM，TLAB</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

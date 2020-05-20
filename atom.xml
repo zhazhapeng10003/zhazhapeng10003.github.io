@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhazhapeng.cn/"/>
-  <updated>2020-05-20T06:00:17.223Z</updated>
+  <updated>2020-05-20T07:28:31.789Z</updated>
   <id>https://zhazhapeng.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>双亲委派机制</title>
+    <link href="https://zhazhapeng.cn/post/16515.html"/>
+    <id>https://zhazhapeng.cn/post/16515.html</id>
+    <published>2020-05-20T07:26:31.000Z</published>
+    <updated>2020-05-20T07:28:31.789Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程语言" scheme="https://zhazhapeng.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="JVM，类加载子系统" scheme="https://zhazhapeng.cn/tags/JVM%EF%BC%8C%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>对象分配过程TLAB</title>
     <link href="https://zhazhapeng.cn/post/48440.html"/>
     <id>https://zhazhapeng.cn/post/48440.html</id>
     <published>2020-05-20T05:26:25.000Z</published>
-    <updated>2020-05-20T06:00:17.223Z</updated>
+    <updated>2020-05-20T06:44:47.689Z</updated>
     
     <summary type="html">
     
@@ -519,33 +546,6 @@
         
         
           &lt;h2 id=&quot;二维数组中的查找&quot;&gt;&lt;a href=&quot;#二维数组中的查找&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://zhazhapeng.cn/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="剑指Offer" scheme="https://zhazhapeng.cn/tags/%E5%89%91%E6%8C%87Offer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>剑指Offer汇总</title>
-    <link href="https://zhazhapeng.cn/post/35137.html"/>
-    <id>https://zhazhapeng.cn/post/35137.html</id>
-    <published>2020-03-27T03:44:28.000Z</published>
-    <updated>2020-05-20T05:59:48.626Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;渣渣鹏的学习记录&quot;&gt;&lt;a href=&quot;#渣渣鹏的学习记录&quot;
         
       
     
