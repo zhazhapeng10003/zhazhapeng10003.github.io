@@ -3,6 +3,9 @@
 
 
 <head>
+    <!-- http -> https -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <meta charset="utf-8">
     <meta name="keywords" content="关于, 渣渣鹏">
     <meta name="description" content="">
@@ -733,7 +736,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"编程基础","value":4},{"name":"项目工具","value":1},{"name":"刷题","value":14},{"name":"编程语言","value":1}],
+                data: [{"name":"刷题","value":14},{"name":"编程基础","value":4},{"name":"项目工具","value":1},{"name":"编程语言","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -757,7 +760,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["剑指Offer","数组","JVM","Java","Maven","MySQL","类加载子系统","TLAB"]
+                data: ["剑指Offer","数组","JVM","Java","Maven","MySQL","TLAB","类加载子系统"]
             }
         ],
         yAxis: [
@@ -854,14 +857,6 @@
         <div class="tag-chips center-align">
             
             
-            
-            
-            <a href="../tags/Maven/">
-                <span class="chip center-align waves-effect waves-light chip-default">Maven</span>
-            </a>
-            
-            
-            
             <a href="../tags/%E5%89%91%E6%8C%87Offer/">
                 <span class="chip center-align waves-effect waves-light chip-default">剑指Offer</span>
             </a>
@@ -874,10 +869,6 @@
             
             
             
-            <a href="../tags/MySQL/">
-                <span class="chip center-align waves-effect waves-light chip-default">MySQL</span>
-            </a>
-            
             
             
             <a href="../tags/JVM/">
@@ -886,14 +877,26 @@
             
             
             
-            <a href="../tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F/">
-                <span class="chip center-align waves-effect waves-light chip-default">类加载子系统</span>
+            <a href="../tags/Maven/">
+                <span class="chip center-align waves-effect waves-light chip-default">Maven</span>
+            </a>
+            
+            
+            
+            <a href="../tags/MySQL/">
+                <span class="chip center-align waves-effect waves-light chip-default">MySQL</span>
             </a>
             
             
             
             <a href="../tags/TLAB/">
                 <span class="chip center-align waves-effect waves-light chip-default">TLAB</span>
+            </a>
+            
+            
+            
+            <a href="../tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F/">
+                <span class="chip center-align waves-effect waves-light chip-default">类加载子系统</span>
             </a>
             
             
