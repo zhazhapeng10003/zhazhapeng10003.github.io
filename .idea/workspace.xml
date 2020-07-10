@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc52818a-f97a-497b-ba92-94a34fe13ce9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/bg-cover-content.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/bg-cover-content.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/gitment.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/gitment.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/social-link.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/_partial/social-link.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/layout/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/css/matery.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/css/matery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/js/matery.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/js/matery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/banner/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/featureimages/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/reward/alipay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/reward/alipay.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/reward/wechat.png" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias/reward/wechat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia/_config.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.deploy_git" />
+  </component>
+  <component name="ProjectId" id="1ZfAYACqkBGJWcIYowEY11Y5hFT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc52818a-f97a-497b-ba92-94a34fe13ce9" name="Default Changelist" comment="" />
+      <created>1585219821077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585219821077</updated>
+      <workItem from="1585219831351" duration="1000" />
+      <workItem from="1585240681016" duration="160000" />
+      <workItem from="1585317860801" duration="75000" />
+      <workItem from="1585371243900" duration="13000" />
+      <workItem from="1585394010893" duration="86000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
